@@ -1,0 +1,1303 @@
+
+/* 
+    Styling header container
+        - Adding background image
+*/
+.hamburger-icon {
+
+    display: none;
+}
+
+.header-container {
+    background-image: url("/images/image-hero-desktop.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 95%;
+    color: white;
+    margin: auto;
+}
+
+.header-container p {
+
+    display: inline-block;
+    /* margin-right: auto; */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 6vh 15vh 40vh 22vh;
+    font-size: 13px;
+}
+
+.discover {
+
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.about:hover {
+
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.discover:hover {
+
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.get-started:hover{
+    
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+.main-container {
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 750px;
+    margin: auto;
+    margin-top: -100px;
+    margin-bottom: 5vh;
+}
+
+/* 
+    Styling first section in main container
+        - Mastercraft title
+        - Mastercraft description
+        - Button -> "Back This Project"
+        - Bookmark marker
+*/
+
+
+.mastercraft-title-button-bookmark {
+
+    background-color: white;
+    width: 100%;
+
+    border-radius: 7px;
+    text-align: center;
+}
+
+.logo-mastercraft {
+
+    display: block;
+    margin: auto;
+    margin-top: -4%;
+}
+
+.mastercraft-title {
+
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34.24px;
+    color: black;
+    margin-top: 2vh;
+    letter-spacing: -0.5px;
+}
+
+.mastercraft-description {
+
+    color: #7A7A7A;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.57px;
+    margin-top: 2vh;
+    letter-spacing: 0.5px;
+}
+
+.button-and-bookmark {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 4vh 5vh 6vh 8vh;
+    border-radius: 10%;
+}
+
+.back-this-project {
+    
+    background-color: #3CB3AB;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 30px;
+    padding-left: 6vh;
+    padding-right: 6vh;
+}
+
+.back-this-project:hover {
+
+    background-color: #147A73;
+}
+
+.bookmark {
+
+    background-image: url("/images/icon-bookmark.svg");
+    background-color: rgba(47, 47, 47, 0.05);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: contain;
+    width: 25%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.57px;
+    padding: 2.5vh 0vh 2.5vh 5vh;
+    color: #7A7A7A;
+    border-radius: 30px;
+}
+
+.bookmark:hover{
+
+    cursor: pointer;
+    background-image: url("/images/icon-bookmark-hover.png");
+}
+
+.bookmark-clicked {
+
+    background-image: url("/images/icon-bookmark-clicked.png");
+    color: #147A73;
+}
+
+.bookmark-clicked:hover{
+
+    background-image: url("/images/icon-bookmark-clicked.png");
+    color: #147A73;    
+}
+
+/*
+    Styling main second section
+        - Setting Numbers and number description section in grid
+            -> Adding styles for nubers and number description
+        - Making full loader and loader percentage
+*/
+.numbers-and-loader {
+
+    width: 100%;
+    margin-top: 2vh;
+    background-color: white;
+    border-radius: 7px;
+}
+
+.back-backed-loader {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 4% 4% 6% 8%;
+    justify-items: center;
+    text-align: left;
+    
+}
+
+.hr-backed {
+
+    display: none;
+}
+
+.hr-backers {
+
+    display: none;
+}
+
+.backed {
+
+    border-right: 0.5px solid #b4b3b3;
+    width: 90%;
+}
+
+.backer {
+
+    border-right: 0.5px solid #b4b3b3;
+    width: 90%;
+    padding-left: 25%;
+}
+
+.days-left {
+
+    width: 90%;
+    padding-left: 50%;
+}
+
+.number {
+
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39.14px;
+    margin-bottom: 5%;
+    color: black;
+}
+
+.number-description {
+
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18.35px;
+    color: #7A7A7A;
+}
+
+.full-loader {
+
+    width: 81%;
+    height: 1.3vh;
+    margin: auto;
+    margin-bottom: 7%;
+
+    background-color: rgba(47, 47, 47, 0.09);
+    border-radius: 10px;
+}
+
+.percentage-loader {
+
+    background-color: #3CB3AB;
+    width: 80%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* 
+    Setting styles for main third section
+    - 
+*/
+
+.about-bamboo-black-mahogany {
+
+    background-color: white;
+    border-radius: 7px;
+    margin-top: 2vh;
+}
+
+.about-project-title {
+
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.46px;
+    padding: 5% 5% 5% 5%;
+    color: black;
+}
+
+.about-project-description {
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #7A7A7A;
+    padding: 0% 5% 3% 5%;
+}
+
+.about-project-poddescription {
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #7A7A7A;
+    padding: 0% 5% 5% 5%;
+}
+
+.select-reward-card {
+
+    padding: 5% 5% 5% 5%;
+    border: 1px solid #dddada;
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;  
+    margin-bottom: 5vh;  
+}
+
+.title-pledge-box {
+
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3vh;
+    color: black;
+}
+
+.select-reward-card h2 {
+
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22.01px;
+}
+
+.select-reward-card .pledge {
+
+    color: #3cb3ab;
+    font-size: 15px;
+    line-height: 18.35px;
+    font-weight: 500;
+}
+
+.select-reward-card .description {
+
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #7A7A7A;
+}
+
+.select-reward-card .left-button {
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+
+.select-reward-card .left {
+
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.select-reward-card .number-left {
+
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39.14px;
+    color: black;
+}
+
+.select-reward-card .text-left {
+
+    font-size: 15px;
+    line-height: 18.35px;
+    font-weight: 400;
+    color: #7A7A7A;
+}
+
+.select-reward-card .select-reward {
+
+    background-color: #3CB3AB;
+    color: white;
+    font-size: 14px;
+    line-height: 17.12px;
+    font-weight: 700;
+    border: none;
+    border-radius: 30px;
+    padding: 3% 6% 3% 6%;
+}
+
+.select-reward:hover {
+
+    background-color: #147A73;
+}
+
+/* 
+    Styling lightbox
+*/
+
+.lightbox {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow-y: scroll;
+}
+
+.lightbox-container {
+
+    width: 705px;
+    background-color: white;
+    margin: auto;
+    margin-top: 15vh;
+    margin-bottom: 12vh;
+    border-radius: 7px;
+    padding: 30px 30px 30px 30px;
+}
+
+.img-close {
+
+    margin-left: 675px;
+}
+
+.img-close:hover {
+
+    cursor: pointer;
+}
+
+.lightbox-title {
+
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.35px;
+    color: black;
+    margin-bottom: 2vh;
+}
+
+.lightbox-description {
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #7A7A7A;
+    margin-bottom: 2vh;
+}
+
+.circle-inactive {
+
+    height: 20px;
+    width: 20px;
+    border: 1px solid #c2bfbf;
+    border-radius: 100px;
+}
+
+.circle-inactive:hover {
+
+    cursor: pointer;
+}
+
+.circle-inactive-hover {
+
+    border: 1px solid #3CB3AB;
+}
+
+.circle-active {
+    width: 11.5px;
+    height: 11.5px;
+    border-radius: 100%;
+    background-color: #3CB3AB;
+    margin: auto;
+    margin-top: 4.5px;
+}
+
+.lightbox-card {
+
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    justify-items: center;
+    border: 1px solid #b4b3b3;
+    padding: 4% 2% 0% 2%;
+
+    border-radius: 7px;
+    margin-bottom: 2vh;
+    position: relative;
+}
+
+.lightbox-card-content {
+
+    padding: 0 5% 5% 5%;
+    margin-left: -5%;
+}
+
+.lightbox-card-title-pledge-left {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.lightbox-card-title {
+
+    color: black;
+    margin-right: 1vw;
+}
+
+.lightbox-card-title-hover {
+
+    color: #3CB3AB;
+}
+
+.lightbox-card-title:hover {
+
+    cursor: pointer;
+}
+
+.lightbox-card-pledge {
+
+    color: #3CB3AB;
+}
+
+
+.lightbox-title-pledge {
+
+    display: flex;
+    font-size: 16px;
+    width: 65%;
+    font-weight: 700;
+    line-height: 19.57px;
+    justify-content: flex-start;
+}
+
+.lightbox-left-mobile {
+
+    display: none;
+}
+
+.lightbox-left {
+
+    display: flex;
+}
+
+.lightbox-number-left {
+
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 10px;
+    color: black;
+}
+
+.lightbox-text-left {
+
+    color: #7A7A7A;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18.35px;
+}
+
+.lightbox-card-description {
+
+    color: #7A7A7A;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-top: 5%;
+}
+
+.not-visible {
+
+    display: none !important;
+}
+
+/* 
+    Lightbox ative state styles
+*/
+
+.horizontal-line {
+
+    width: 705px;
+    color: white;
+    left: -1px;
+    position: absolute;
+    border: none;
+    border-top: 1px solid #b4b3b3;
+    margin-top: 2vh;
+}
+
+.active-light-box-card {
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 5%;
+    padding-right: 9%;
+    margin-top: 2vh;
+}
+
+.enter-your-pledge {
+
+    margin-left: -2%;
+    color: #7A7A7A;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+
+.enter-pledge-and-continue {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+
+    font-weight: bold;
+    color: #b4b3b3;
+    font-size: 15px;
+}
+
+.enter-pledge {
+
+    position: relative;
+    border: 1px solid #3CB3AB;
+    padding: 6% 16% 6% 5%;
+    border-radius: 30px;
+    width: 45px;
+    height: 15px;
+}
+
+.entered-pledge {
+
+    color: black;
+    border: none;
+    border-right: 1px solid #3CB3AB;
+    position: absolute;
+    width: 42px;
+    left: 25px;
+    bottom: 13px;
+    font-weight: 700;
+
+    font-family: "Commissioner";
+    font-size: 14px;
+}
+
+.continue {
+
+    background-color: #3CB3AB;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 6% 8% 7% 8%;
+    border-radius: 40px;
+}
+
+.continue:hover {
+
+    background-color: #147A73;
+    cursor: pointer;
+}
+
+.lightbox-card-active {
+
+    border: 3px solid #3CB3AB;
+}
+
+/* Creating second light box "Thanks for your suppourt" */
+
+.lightbox-thanks-for-your-support {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow-y: scroll;
+}
+
+.lightbox-thanks-for-your-support-container {
+
+    position: absolute;
+    width: 500px;
+    border-radius: 7px;
+    background-color: white;
+    top: 200px;
+    left: 560px;
+    text-align: center;
+    padding: 2% 2% 2% 2%;
+}
+
+.lightbox-thanks-for-your-support-image {
+
+    margin-top: 4%;
+    margin-bottom: 7%;
+}
+
+.lightbox-thanks-for-your-support-title {
+
+    font-size: 24px;
+    line-height: 29.35px;
+    font-weight: 700;
+    margin-bottom: 5%;
+}
+
+.lightbox-thanks-for-your-support-description {
+
+    font-size: 16px;
+    color: #7A7A7A;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 5%;
+}
+
+.lightbox-thanks-for-your-support-button {
+
+    border: none;
+    background-color: #3CB3AB;
+    color: white;
+    padding: 3% 6% 3% 6%;
+    border-radius: 30px;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.lightbox-thanks-for-your-support-button:hover {
+
+    background-color: #147A73;
+}
+
+/* 
+    Creating classes for inactive reaward state on main page
+*/
+
+.select-reward-card-not-active {
+
+    border: 1px solid #eeeeee;
+}
+
+.select-reward-card-title-not-active {
+
+    color: #7A7A7A;
+}
+
+.select-reward-card-title-not-active:hover {
+
+    cursor: unset;
+}
+
+.pledge-not-active {
+
+    color:#9ae4de !important; 
+}
+
+.description-not-active {
+
+    color: #b4b3b3 !important;
+}
+
+.number-left-not-active {
+
+    color: #7A7A7A !important;
+}
+
+.text-left-not-active {
+
+    color: #b4b3b3 !important;
+}
+
+.select-reward-not-active {
+
+    background-color: #b4b3b3 !important;
+}
+
+.select-reward-not-active:hover {
+
+    cursor: not-allowed;
+}
+
+.circle-inactive-not-active:hover {
+
+    cursor: unset;
+}
+
+@media only screen and (max-width: 820px) {
+
+    .hamburger-icon {
+
+        display: block;
+    }
+
+    .header-container {
+        background-image: url("/images/image-hero-mobile.jpg");
+    }
+
+    .about-discover-get-started {
+        display: none;
+    }
+
+    .header-content {
+        
+        padding: 6vh 5vh 40vh 5vh;
+    }
+
+    .main-container {
+
+        width: 70%;
+        margin-top: -8%;
+    }
+
+    .button-and-bookmark {
+
+        display: flex;
+        justify-content: space-evenly;
+        padding: 4% 3% 6% 15%;
+    }
+
+    .bookmark {
+
+        background-color: white;
+        font-size: 0px;
+    }
+
+    .mastercraft-title-button-bookmark {
+
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 90%;
+    }
+
+    .numbers-and-loader {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5%;
+    }
+
+    .back-backed-loader {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        padding: 0 0 0 0;
+    }
+
+    .number {
+
+        text-align: center;
+    }
+
+    .number-description {
+
+        text-align: center;
+        margin-bottom: 10%;
+    }
+
+    .hr-backed {
+
+        display: block;
+        width: 40%;
+        border: none;
+        border-top: 1px solid #e0dfdf;
+    }
+
+    .backed {
+
+        border: none;
+        padding: unset;
+        margin-bottom: 5%;
+    }
+
+    .hr-backers {
+    
+        display: block;
+        width: 40%;
+        border: none;
+        border-top: 1px solid #e0dfdf;
+    }
+
+    .backer {
+
+        border: none;
+        padding: unset;
+        margin-bottom: 5%;
+    }
+
+    .days-left {
+
+        padding: unset;
+    }
+    
+    .about-project-title {
+
+        padding-top: 10%;
+    }
+
+    .title-pledge-box {
+
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .select-reward-card h2 {
+
+        margin-bottom: 2%;
+    }
+
+    .select-reward-card .left-button {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .select-reward-card .left {
+
+        margin-bottom: 4%;
+    }
+
+    .select-reward-card .select-reward {
+
+        width: 40%;
+        padding-top: 4%;
+        padding-bottom: 4%;
+    }
+
+    .lightbox-container {
+
+        width: 70%;
+    }
+
+    .img-close {
+        margin-left: 97%;
+    }
+
+    .circle-inactive {
+
+        margin-top: 22%;
+    }
+
+    .lightbox-title-pledge {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lightbox-card-title {
+
+        margin-bottom: 3%;
+    }
+
+    .lightbox-left-mobile {
+
+        display: flex;
+    }
+    
+    .lightbox-left {
+    
+        display: none;
+    }
+
+    .lightbox-card-description {
+
+        margin-bottom: 4%;
+    }
+
+    #first-lightbox-card .circle-inactive {
+
+        margin-top: 0;
+    }
+
+    .horizontal-line {
+
+        width: 100.5%;
+    }
+
+    .active-light-box-card {
+
+        flex-direction: column;
+    }
+
+    .enter-pledge-and-continue {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 5%;
+        width: 50%;
+    }
+
+    .enter-your-pledge {
+
+        margin-top: 4%;
+        margin-bottom: 5%;
+    }
+
+    .enter-pledge {
+
+        margin-right: 5%;
+    }
+
+    .entered-pledge {
+
+        bottom: 13px;
+        left: 29px;
+        border: none;
+    }
+
+    #first-lightbox-card .enter-pledge-and-continue {
+
+        display: block;
+    }
+
+    #first-lightbox-card .continue {
+
+        text-align: center;
+        width: 60%;
+        margin: auto;
+    }
+
+    .continue {
+
+        padding: 6% 11% 7% 11%;
+    }
+
+    .lightbox-thanks-for-your-support-container {
+
+        width: 60%;
+        top: 25%;
+        left: 18%;
+    }
+
+    .lightbox-thanks-for-your-support-button {
+
+        margin-bottom: 6%;
+    }
+
+    .lightbox-hamburger {
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(180deg, rgba(0,0,0,0.5), rgba(255, 255, 255, 0.2));
+    }
+
+    .logo-and-close-icon {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: auto;
+        align-items: center;
+        justify-items: center;
+        margin-top: 5%;
+    }
+
+    .logo-image {
+
+        margin-right: 35%;
+    }
+
+    .icon-close {
+
+        margin-left: 55%;
+    }
+
+    .lightbox-hamburger-container {
+
+        background-color: white;
+        margin: auto;
+        margin-top: 15%;
+        width: 40%;
+        color: black;
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 7px;
+    }
+
+    .lightbox-hamburger-about {
+
+        padding: 8% 0% 8% 5%;
+        border-bottom: 1px solid #dddada;
+    }
+
+    .lightbox-hamburger-discover {
+
+        padding: 8% 0% 8% 5%;
+        border-bottom: 1px solid #dddada;
+    }
+
+    .lightbox-hamburger-get-started {
+
+        padding: 8% 0% 8% 5%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    .mastercraft-title {
+
+        font-size: 20px;
+        line-height: 24.46px;
+        width: 60%;
+        margin: auto;
+        margin-top: 5%;
+        margin-bottom:2%;
+    }
+
+    .mastercraft-description {
+
+        font-size: 14px;
+        line-height: 24px;
+        width: 70%;
+        margin: auto;
+    }
+
+    .button-and-bookmark {
+
+        padding: 6% 0 6% 15%;
+    }
+
+    .back-this-project {
+
+        margin-right: 3%;
+        padding: 0 5% 0 5%;
+    }
+
+    .about-project-title {
+
+        font-size:  18px;
+    }
+
+    .about-project-description {
+
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .about-project-poddescription {
+
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .select-reward-card h2 {
+
+        font-size: 14px;
+    }
+
+    .select-reward-card .pledge {
+
+        font-size: 14px;
+    }
+
+    .select-reward-card .description {
+
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .select-reward-card .select-reward {
+
+        width: 50%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .lightbox-title {
+
+        font-size: 18px;
+    }
+
+    .lightbox-description {
+
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .lightbox-card-title {
+
+        font-size: 14px;
+    }
+
+    .lightbox-card-description {
+
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .lightbox-card-pledge {
+
+        font-size: 14px;
+    }
+
+    .enter-your-pledge {
+
+        font-size: 14px;
+    }
+
+    .enter-pledge-and-continue {
+
+        width: 70%;
+    }
+
+    .enter-pledge {
+
+        padding: 5% 16% 5% 5%;
+    }
+
+    .continue {
+        padding: 5% 11% 7% 11%;
+    }
+
+    .lightbox-hamburger-container {
+
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .mastercraft-title-button-bookmark {
+
+        padding: 0 0 0 0;
+        width: 130%;
+    }
+
+    .numbers-and-loader {
+
+        width: 130%;
+    }
+
+    .about-bamboo-black-mahogany {
+
+        width: 130%;
+    }
+
+    .enter-pledge-and-continue {
+        width: 92%;
+    }
+
+    .entered-pledge {
+
+        bottom: 10px;
+    }
+
+    .lightbox-title-pledge {
+
+        margin-left: 3%;
+    }
+
+    .lightbox-hamburger-container {
+
+        width: 60%;
+    }
+
+    .logo-image {
+        margin-right: 0%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+    .mastercraft-title {
+
+        width: 83%;
+    }
+
+    .button-and-bookmark {
+
+        padding: 6% 0 6% 10%;
+    }
+
+    .back-this-project {
+
+        font-size: 13px;
+    }
+
+    .select-reward-card .select-reward {
+
+        width: 60%;
+    }
+
+    .lightbox-container {
+        width: 73%;
+        padding: 30px 30px 30px 19px;
+    }
+
+    .lightbox-card {
+
+        width: 100%;
+    }
+
+    .enter-pledge-and-continue {
+        width: 106%;
+    }
+
+    .lightbox-title-pledge {
+
+        width: 100%;
+    }
+
+    .lightbox-hamburger-container {
+
+        width: 75%;
+    }
+}

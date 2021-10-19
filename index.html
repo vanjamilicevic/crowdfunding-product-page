@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/globals.css">
+    <link rel="stylesheet" href="./CSS/styles.css">
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Crowdfunding product page</title>
+  </head>
+  <!-- 
+        Body consists of:
+          - Header container
+          - Main container
+     -->
+  <body>
+    <!-- 
+        Header container contains:
+          - Background image
+          - Logo crowdfund image
+          - Three paragraphs:
+              - About
+              - Discover
+              - Get Started
+     -->
+    <header class="header-container" id="header-container">
+      <section class="header-content" id="header-content">
+        <img class="crowdfund-logo" id="crowdfund-logo" src="./images/logo.svg" alt="Crowdfund logo">
+        <img class="hamburger-icon" id="hamburger-icon" src="./images/icon-hamburger.svg" alt="Hamburger icon">
+        <section class="about-discover-get-started">
+          <p class="about">
+            About
+          </p>
+          <p class="discover">
+            Discover
+          </p>
+          <p class="get-started">
+            Get Started
+          </p>
+        </section>
+      </section>
+    </header>
+    <!-- 
+      Main container consist of three sections:
+        - First -> Mastercraft-title-button-bookmark section
+        - Second -> Numbers and loader section
+        - Third -> About-Bamboo-Black section
+     -->
+    <main class="main-container">
+      <!-- 
+        First section "mastercraft-title-button-bookmark" contains:
+          - Logo image of Mastercraft
+          - Mastercraft title
+          - Mastercraft description
+          - Section with:
+              - Back this project button
+              - Bookmark image and marker section
+       -->
+      <section class="mastercraft-title-button-bookmark">
+        <img class="logo-mastercraft" src="./images/logo-mastercraft.svg" alt="Mastercraft Logo">
+        <h1 class="mastercraft-title" id="mastercraft-title">
+          Mastercraft Bamboo Monitor Riser
+        </h1>
+        <p class="mastercraft-description">
+          A beautiful & handcrafted stand to reduce neck and eye strain.
+        </p>
+        <section class="button-and-bookmark">
+          <button class="back-this-project" id="back-this-project">
+            Back this project
+          </button>
+          <section class="bookmark" id="bookmark">
+            <p>Bookmark</p>
+          </section>
+        </section>
+      </section>
+
+      <!-- 
+        Second section "numbers-and-loader" consists of:
+          - Three sections which each represents:
+              - Backed
+              - Backers
+              - Days left
+          - Loader which is made of two diws one on top of other:
+              - first lighter for 100%
+              - second blue for representation of backed
+       -->
+      <section class="numbers-and-loader">
+        <section class="back-backed-loader">
+          <section class="backed ">
+            <p class="number" id="cash">
+              $89,914
+            </p>
+            <p class="number-description">
+              of $100,000 backed
+            </p>
+            <hr class="hr-backed">
+          </section>
+          <section class="backer">
+            <p class="number" id="backers">
+              5,007
+            </p>
+            <p class="number-description">
+              total backers
+            </p>
+            <hr class="hr-backers">
+          </section>
+          <section class="days-left">
+            <p class="number" id="days">
+              56
+            </p>
+            <p class="number-description">
+              days left
+            </p>
+          </section>
+        </section>
+        
+        <div class="full-loader">
+          <div class="percentage-loader" id="percentage-loader">
+          </div>
+        </div>
+      </section>
+      <!-- 
+        Third section "about-bamboo-black-mahogany" consists of four sections:
+          - About project title and description section
+          - Bamboo Stand section
+          - Black Edition Stand section
+          - Mahogany Edition Stand section
+       -->
+      <section class="about-bamboo-black-mahogany">
+        <section class="about-project-title-and-desription">
+          <h2 class="about-project-title" id="about-project-title">
+            About this project
+          </h2>
+          <p class="about-project-description">
+            The Mastercraft Bamboo Monitor Riser is a sturdy and stylish
+            platform that elevates your screen to a more comfortable viewing height.
+            Placing your monitor at eye level has the potential to improve your posture
+            and make you more comfortable while at work, helping you stay focused on the
+            task at hand.
+          </p>
+          <p class="about-project-poddescription">
+            Featuring artisan craftsmanship, the simplicity of design
+            creates extra desk space below your computer to allow notepads, pens, and
+            USB sticks to be stored under the stand.
+          </p>
+        </section>
+        <section class="select-reward-card" id="bamboo-reward-card">
+          <section class="title-pledge-box">
+            <h2 class="bamboo-stand-title" id="bamboo-special-edditon-title">
+              Bamboo Stand
+            </h2>
+            <p class="bamboo-stand pledge" id="bamboo-special-edditon-pledge">
+              Pledge $25 or more
+            </p>
+          </section>
+          <p class="bamboo-stand description" id="bamboo-special-edditon-description">
+            You get an ergonomic stand made of natural bamboo. You've helped us launch our
+            promotional campaign, and you’ll be added to a special Backer member list.
+          </p>
+          <section class="left-button">
+            <section class="left">
+              <section class="number-left" id="bamboo-edition-number-left">101</section>
+              <section class="text-left" id="bamboo-text-left">left</section>
+            </section>
+            <button class="select-reward" id="bamboo-edition-select-reward">
+              Select Reward
+            </button>
+          </section>
+        </section>
+
+        <section class="select-reward-card" id="black-reward-card">
+          <section class="title-pledge-box">
+            <h2 class="black-edition-stand-title" id="black-special-edditon-title">
+              Black Edition Stand
+            </h2>
+            <p class="black-edition-stand pledge" id="black-special-edditon-pledge">
+              Pledge $75 or more
+            </p>
+          </section>
+          <p class="black-edition-stand description" id="black-special-edditon-description">
+            You get a Black Special Edition computer stand and a personal thank you. You’ll be
+            added to our Backer member list. Shipping is included.
+          </p>
+          <section class="left-button">
+            <section class="left">
+              <section class="number-left" id="black-edition-number-left">64</section>
+              <section class="text-left" id="black-text-left">left</section>
+            </section>
+            <button class="select-reward" id="black-edition-select-reward">
+              Select Reward
+            </button>
+          </section>
+        </section>
+
+        <section class="select-reward-card" id="mahogany-reward-card">
+          <section class="title-pledge-box">
+            <h2 class="mahogany-special-edditon-title" id="mahogany-special-edditon-title">
+              Mahogany Special Edition
+            </h2>
+            <p class="mahogany-special-edditon pledge" id="mahogany-special-edditon-pledge">
+              Pledge $200 or more
+            </p>
+          </section>
+          <p class="mahogany-special-edditon description" id="mahogany-special-edditon-description">
+            You get two Special Edition Mahogany stands, a Backer T-Shirt, 
+            and a personal thank you. You’ll be added
+            to our Backer member list. Shipping is included.
+          </p>
+          <section class="left-button">
+            <section class="left">
+              <section class="number-left" id="mahogany-edition-number-left">0</section>
+              <section class="text-left" id="mahogany-text-left">left</section>
+            </section>
+            <button class="select-reward" id="mahogany-edition-select-reward">
+              Select Reward
+            </button>
+          </section>
+        </section>
+      </section>
+
+    <!-- 
+      Creating lightbox when "Back This Project" is clicked which is not visible until 
+      "Back this project" button is clicked
+      Lightbox consists of:
+        - Ligxtbox title
+        - Lightbox description
+        - Four sections -> cards which all have active and inactive state
+    -->
+      <section class="lightbox not-visible" id="lightbox">
+        <section class="lightbox-container" id="lightbox-container">
+          <img class="img-close" id="img-close" src="./images/icon-close-modal.svg" alt="Close icon">
+          <h1 class="lightbox-title">
+            Back this project
+          </h1>
+          <p class="lightbox-description">
+            Want to support us in bringing Mastercraft Bamboo Monitor
+            Riser out in the world?
+          </p>
+          <!-- 
+            First lightbox card
+           -->
+          <section class="lightbox-card" id="first-lightbox-card">
+            <div class="circle-inactive" id="circle-inactive-first-card">
+              <div class="circle-active not-visible" id="first-circle-active">
+    
+              </div>
+            </div>
+
+            <section class="lightbox-card-content">
+              <section class="lightbox-card-title-pledge-left">
+                <section class="lightbox-title-pledge">
+                  <p class="lightbox-card-title" id="lightbox-first-card-title">
+                    Pledge with no reward
+                  </p>
+                  <p class="lightbox-card-pledge">
+                    
+                  </p>
+                </section>
+                
+                <section class="lightbox-left">
+                  <section class="lightbox-number-left"></section>
+                  <section class="lightbox-text-left"></section>
+                </section>
+              </section>
+              
+  
+              <p class="lightbox-card-description">
+                Choose to support us without a
+                reward if you simply believe in our project. As a backer, you will be signed
+                up to receive product updates via email.
+              </p>
+              <hr class="horizontal-line not-visible" id="first-horizontal-line">
+            </section>
+
+            <section class="not-visible" id="first-holder-section-one"></section>
+            <section class="active-light-box-card">
+            
+              <p class="enter-your-pledge not-visible" id="first-enter-your-pledge">
+                Enter your pledge
+              </p>
+              <section class="enter-pledge-and-continue">
+                <section class="not-visible" id="first-holder-section-two"></section>
+              <section class="enter-pledge-first not-visible" id="first-enter-pledge">
+              
+                <span class="not-visible" id="first-entered-pledge">
+                  
+                </span>
+              </section>
+              <section class="continue not-visible" id="first-continue">
+                Continue
+              </section>
+            </section>
+
+            </section>
+        </section>
+
+        <!-- 
+          Second lightbox card
+        -->
+        <section class="lightbox-card" id="second-lightbox-card">
+          <div class="circle-inactive" id="circle-inactive-second-card">
+            <div class="circle-active not-visible" id="second-circle-active">
+  
+            </div>
+          </div>
+
+          <section class="lightbox-card-content">
+            <section class="lightbox-card-title-pledge-left">
+              <section class="lightbox-title-pledge">
+                <p class="lightbox-card-title" id="lightbox-second-card-title">
+                  Bamboo Stand
+                </p>
+                <p class="lightbox-card-pledge" id="lightbox-second-card-pledge">
+                  Pledge $25 or more
+                </p>
+              </section>
+              
+              <section class="lightbox-left">
+                <section class="lightbox-number-left" id="second-lightbox-number-left">101</section>
+                <section class="lightbox-text-left">left</section>
+              </section>
+            </section>
+            
+
+            <p class="lightbox-card-description" id="lightbox-second-card-description">
+              You get ergonomic stand made of natural bamboo. You've helped
+              us launch our promotional campaign, and you'll be added to a special 
+              Backer member list.
+            </p>
+            <section class="lightbox-left-mobile">
+              <section class="lightbox-number-left" id="second-lightbox-number-left-mobile">101</section>
+              <section class="lightbox-text-left">left</section>
+            </section>
+            <hr class="horizontal-line not-visible" id="second-horizontal-line">
+          </section>
+          <section class="not-visible" id="second-holder-section-one"></section>
+          <section class="active-light-box-card">
+           
+            <p class="enter-your-pledge not-visible" id="second-enter-your-pledge">
+              Enter your pledge
+            </p>
+            <section class="enter-pledge-and-continue">
+              <section class="not-visible" id="second-holder-section-two"></section>
+            <section class="enter-pledge not-visible" id="second-enter-pledge">
+              $ 
+              <input class="entered-pledge" id="second-entered-pledge" type="number" value="25" min="25" max="75">
+            </section>
+            <section class="continue not-visible" id="second-continue">
+              Continue
+            </section>
+          </section>
+
+          </section>
+        </section>
+
+        <!-- 
+          Third lightbox card
+        -->
+        <section class="lightbox-card" id="third-lightbox-card">
+          <div class="circle-inactive" id="circle-inactive-third-card">
+            <div class="circle-active not-visible" id="third-circle-active">
+  
+            </div>
+          </div>
+
+          <section class="lightbox-card-content">
+            <section class="lightbox-card-title-pledge-left">
+              <section class="lightbox-title-pledge">
+                <p class="lightbox-card-title" id="lightbox-third-card-title">
+                  Black Edition Stand
+                </p>
+                <p class="lightbox-card-pledge" id="lightbox-third-card-pledge">
+                  Pledge $75 or more
+                </p>
+              </section>
+              
+              <section class="lightbox-left">
+                <section class="lightbox-number-left" id="third-lightbox-number-left">64</section>
+                <section class="lightbox-text-left">left</section>
+              </section>
+            </section>
+            
+
+            <p class="lightbox-card-description" id="lightbox-third-card-description">
+              You get a Black Special Edition stand and a personal thank
+              for you. You'll be added to our Backer member list. 
+              Shipping is included.
+            </p>
+            <section class="lightbox-left-mobile">
+              <section class="lightbox-number-left" id="third-lightbox-number-left-mobile">64</section>
+              <section class="lightbox-text-left">left</section>
+            </section>
+            <hr class="horizontal-line not-visible" id="third-horizontal-line">
+          </section>
+
+          <section class="not-visible" id="third-holder-section-one"></section>
+          <section class="active-light-box-card">
+           
+            <p class="enter-your-pledge not-visible" id="third-enter-your-pledge">
+              Enter your pledge
+            </p>
+            <section class="enter-pledge-and-continue">
+              <section class="not-visible" id="third-holder-section-two"></section>
+            <section class="enter-pledge not-visible" id="third-enter-pledge">
+              $ 
+            <input class="entered-pledge not-visible" id="third-entered-pledge" type="number" value="75" min="75" max="200">
+    
+          </section>
+            <section class="continue not-visible" id="third-continue">
+              Continue
+            </section>
+          </section>
+
+          </section>
+          
+        </section>
+        
+        <!-- 
+          Fourth lightbox card
+        -->
+        <section class="lightbox-card" id="fourth-lightbox-card">
+          <div class="circle-inactive" id="circle-inactive-fourth-card">
+            <div class="circle-active not-visible" id="fourth-circle-active">
+  
+            </div>
+          </div>
+
+          <section class="lightbox-card-content">
+            <section class="lightbox-card-title-pledge-left">
+              <section class="lightbox-title-pledge">
+                <p class="lightbox-card-title" id="lightbox-fourth-card-title">
+                  Mahogany Special Edition
+                </p>
+                <p class="lightbox-card-pledge" id="lightbox-fourth-card-pledge">
+                  Pledge $200 or more
+                </p>
+              </section>
+              
+              <section class="lightbox-left">
+                <section class="lightbox-number-left" id="fourth-lightbox-number-left">0</section>
+                <section class="lightbox-text-left">left</section>
+              </section>
+            </section>
+            
+
+            <p class="lightbox-card-description" id="lightbox-fourth-card-description">
+              You get two special Edition Mahogany stands, a backer T-shirt,
+              and a personal thank you. You'll be added to our Backer member
+              list. Shipping is included.
+            </p>
+            <section class="lightbox-left-mobile">
+              <section class="lightbox-number-left" id="fourth-lightbox-number-left-mobile">1</section>
+              <section class="lightbox-text-left">left</section>
+            </section>
+            <hr class="horizontal-line not-visible" id="fourth-horizontal-line">
+          </section>
+            <section class="holder-section not-visible" id="fourth-holder-section-one"></section>
+            <section class="active-light-box-card">
+            
+              <p class="enter-your-pledge not-visible" id="fourth-enter-your-pledge">
+                Enter your pledge
+              </p>
+              <section class="enter-pledge-and-continue">
+                <section class="not-visible" id="fourth-holder-section-two"></section>
+              <section class="enter-pledge not-visible" id="fourth-enter-pledge">
+                $ 
+                <input class="entered-pledge not-visible" id="fourth-entered-pledge" type="number" value="200" min="200" max="999">
+              
+              </section>
+              <section class="continue not-visible" id="fourth-continue">
+                Continue
+              </section>
+            </section>
+
+            </section>
+        </section>
+        
+      </section>
+
+      </section>
+
+      <!-- 
+        Creating lightbox when "continue" is clicked in prewious lightbox
+       -->
+       <section class="lightbox-thanks-for-your-support not-visible" id="lightbox-thanks-for-your-support">
+        <section class="lightbox-thanks-for-your-support-container">
+          <img class="lightbox-thanks-for-your-support-image" src="./images/icon-check.svg" alt="Check icon">
+          <h2 class="lightbox-thanks-for-your-support-title">Thanks for your support!</h2>
+          <p class="lightbox-thanks-for-your-support-description">
+            Your pledge brings us one step closer to sharing Mastercraft 
+            Bamboo Monitor Riser worldwide. You will get an email once 
+            our campaign is completed.
+          </p>
+          <button class="lightbox-thanks-for-your-support-button" id="lightbox-thanks-for-your-support-button">
+            Got it!
+          </button>
+         </section>
+       </section>
+
+      <!-- Creating lightbox when mobile hamburger is clicked -->
+
+      <section class="lightbox-hamburger not-visible" id="lightbox-hamburger">
+        <section class="logo-and-close-icon">
+          <img class="logo-image" src="./images/logo.svg" alt="Logo image">
+          <img class="icon-close" id="icon-close" src="./images/icon-close-menu.svg" alt="Close icon">
+        </section>
+        <section class="lightbox-hamburger-container">
+          <section class="lightbox-hamburger-about" id="lightbox-hamburger-about">
+            About
+          </section>
+          <section class="lightbox-hamburger-discover" id="lightbox-hamburger-discover">
+            Discover
+          </section>
+          <section class="lightbox-hamburger-get-started" id="lightbox-hamburger-get-started">
+            Get Started
+          </section>
+        </section>
+      </section>
+    </main>
+
+    <script src="./utils/index.js"></script>
+    
+  </body>
+</html>
