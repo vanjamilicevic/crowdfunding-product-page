@@ -2,33 +2,44 @@
 /*
     Utils functions
 */ 
-function removeActive(cardNumber) {
+
+const removeActive = (cardNumber) => {
 
     document.getElementById(`${cardNumber}-circle-active`).classList.add("not-visible")
-    document.getElementById(`${cardNumber}-lightbox-card`).classList.remove("lightbox-card-active")
-    document.getElementById(`${cardNumber}-horizontal-line`).classList.add("not-visible")
-    document.getElementById(`${cardNumber}-enter-your-pledge`).classList.add("not-visible")
-    document.getElementById(`${cardNumber}-enter-pledge`).classList.add("not-visible")
-    document.getElementById(`${cardNumber}-continue`).classList.add("not-visible")
-    document.getElementById(`${cardNumber}-entered-pledge`).classList.add("not-visible")
     document.getElementById(`${cardNumber}-holder-section-one`).classList.add("not-visible")
-    document.getElementById(`${cardNumber}-holder-section-two`).classList.add("not-visible")
+    document.getElementById(`${cardNumber}`).classList.add("not-visible")
 }
 
-function addActive(cardNumber) {
+const addActive = (cardNumber) => {
 
     document.getElementById(`${cardNumber}-circle-active`).classList.remove("not-visible")
-    document.getElementById(`${cardNumber}-lightbox-card`).classList.add("lightbox-card-active")
-    document.getElementById(`${cardNumber}-horizontal-line`).classList.remove("not-visible")
-    document.getElementById(`${cardNumber}-enter-your-pledge`).classList.remove("not-visible")
-    document.getElementById(`${cardNumber}-enter-pledge`).classList.remove("not-visible")
-    document.getElementById(`${cardNumber}-continue`).classList.remove("not-visible")
-    document.getElementById(`${cardNumber}-entered-pledge`).classList.remove("not-visible")
     document.getElementById(`${cardNumber}-holder-section-one`).classList.remove("not-visible")
-    document.getElementById(`${cardNumber}-holder-section-two`).classList.remove("not-visible")
+    document.getElementById(`${cardNumber}`).classList.remove("not-visible")
 }
 
-function nothingLeftInactiveState(cardName){
+const switchActive = (value) => {
+
+    ["first", "second", "third", "fourth"].forEach( (element) => {
+
+        if (element === value && element === "first") 
+            addActive(element)
+        else if (element === value && window.localStorage.getItem(`${element}LightboxNumberLeft`) != 0)
+            addActive(element)
+        else 
+            removeActive(element)
+    })
+}
+
+const clearActive = () => {
+
+    removeActive("first")
+    removeActive("second")
+    removeActive("third")
+    removeActive("fourth")
+}
+
+
+const nothingLeftInactiveState = (cardName) => {
     /*
         Inactive states for main page
     */ 
@@ -41,7 +52,7 @@ function nothingLeftInactiveState(cardName){
     document.getElementById(`${cardName}-edition-select-reward`).classList.add("select-reward-not-active")
 }
 
-function nothingLeftInactiveStateLightbox(cardNumber){
+const nothingLeftInactiveStateLightbox = (cardNumber) => {
 
     document.getElementById(`${cardNumber}-lightbox-card`).classList.add("select-reward-card-not-active")
     document.getElementById(`lightbox-${cardNumber}-card-title`).classList.add("select-reward-card-title-not-active")
@@ -52,13 +63,13 @@ function nothingLeftInactiveStateLightbox(cardNumber){
     document.getElementById(`circle-inactive-${cardNumber}-card`).classList.add("circle-inactive-not-active")
 }
 
-function onMouse(cardNumber){
+const onMouse = (cardNumber) => {
 
     document.getElementById(`circle-inactive-${cardNumber}-card`).classList.add("circle-inactive-hover")
     document.getElementById(`lightbox-${cardNumber}-card-title`).classList.add("lightbox-card-title-hover")
 }
 
-function outMouse(cardNumber){
+const outMouse = (cardNumber) => {
 
     document.getElementById(`circle-inactive-${cardNumber}-card`).classList.remove("circle-inactive-hover")
     document.getElementById(`lightbox-${cardNumber}-card-title`).classList.remove("lightbox-card-title-hover")
@@ -154,14 +165,13 @@ document.getElementById("lightbox-hamburger-get-started").addEventListener ("cli
 
 document.getElementById("img-close").addEventListener("click", function() {
 
-    document.getElementById("lightbox").classList.add("not-visible")
-    removeActive("first")
-    removeActive("second")
-    removeActive("third")
-    removeActive("fourth")
+    for (let i = 0; i < document.querySelectorAll(".active-light-box-card").length; i ++)
+        removeActive(document.querySelectorAll(".active-light-box-card")[i].id)
+    
     document.getElementById("bamboo-edition-number-left").innerText = (parseInt(window.localStorage.getItem('secondLightboxNumberLeft'))).toLocaleString()
     document.getElementById("black-edition-number-left").innerText = (parseInt(window.localStorage.getItem('thirdLightboxNumberLeft'))).toLocaleString()
     document.getElementById("mahogany-edition-number-left").innerText = (parseInt(window.localStorage.getItem('fourthLightboxNumberLeft'))).toLocaleString()
+    document.getElementById("lightbox").classList.add("not-visible")
 })
 
 /*
@@ -235,47 +245,46 @@ document.getElementById("img-close").addEventListener("mouseout", function() {
 // FIRST CARD
 document.getElementById("lightbox-first-card-title").addEventListener("click", function() {
 
-    removeActive("second")
-    removeActive("third")
-    removeActive("fourth")
-    addActive("first")
+    switchActive("first")
+})
+
+document.getElementById("circle-inactive-first-card").addEventListener("click", function() {
+
+    switchActive("first")
 })
 
 // SECOND CARD
 document.getElementById("lightbox-second-card-title").addEventListener("click", function() {
 
-    removeActive("first")
-    removeActive("third")
-    removeActive("fourth")
-    if(window.localStorage.getItem('secondLightboxNumberLeft') != 0){
+    switchActive("second")
+})
 
-        addActive("second")
-    }
+document.getElementById("circle-inactive-second-card").addEventListener("click", function() {
+
+    switchActive("second")
 })
 
 // THIRD CARD
 document.getElementById("lightbox-third-card-title").addEventListener("click", function() {
 
-    removeActive("first")
-    removeActive("second")
-    removeActive("fourth")
-    if(window.localStorage.getItem('thirdLightboxNumberLeft') != 0){
+    switchActive("third")
+})
 
-        addActive("third")
-    }
+document.getElementById("circle-inactive-third-card").addEventListener("click", function() {
+
+    switchActive("third")
 })
 
 // FOURTH CARD
 
 document.getElementById("lightbox-fourth-card-title").addEventListener("click", function() {
 
-    removeActive("first")
-    removeActive("second")
-    removeActive("third")
-    if(window.localStorage.getItem('fourthLightboxNumberLeft') != 0){
+    switchActive("fourth")
+})
 
-        addActive("fourth")
-    }
+document.getElementById("circle-inactive-fourth-card").addEventListener("click", function() {
+
+    switchActive("fourth")
 })
 
 /*
@@ -286,10 +295,7 @@ document.getElementById("lightbox-fourth-card-title").addEventListener("click", 
 document.getElementById("first-continue").addEventListener("click", function() {
 
     document.getElementById("lightbox").classList.add("not-visible")
-    removeActive("first")
-    removeActive("second")
-    removeActive("third")
-    removeActive("fourth")
+    clearActive()
     document.getElementById("lightbox-thanks-for-your-support").classList.remove("not-visible")
 })
 
@@ -300,10 +306,7 @@ document.getElementById("second-continue").addEventListener("click", function() 
         alert("You can't enter empty string!")
     } else {
         document.getElementById("lightbox").classList.add("not-visible")
-        removeActive("first")
-        removeActive("second")
-        removeActive("third")
-        removeActive("fourth")
+        clearActive()
         document.getElementById("lightbox-thanks-for-your-support").classList.remove("not-visible")
         }
 })

@@ -26,7 +26,7 @@
 .header-content {
     display: flex;
     justify-content: space-between;
-    padding: 6vh 15vh 40vh 22vh;
+    padding: 3% 10% 20% 15%;
     font-size: 13px;
 }
 
@@ -577,7 +577,7 @@
     position: absolute;
     border: none;
     border-top: 1px solid #b4b3b3;
-    margin-top: 2vh;
+    margin-top: -11vh;
 }
 
 .active-light-box-card {
@@ -674,14 +674,15 @@
 
 .lightbox-thanks-for-your-support-container {
 
-    position: absolute;
     width: 500px;
     border-radius: 7px;
     background-color: white;
     top: 200px;
     left: 560px;
     text-align: center;
-    padding: 2% 2% 2% 2%;
+    padding: 2% 5% 5% 5%;
+    margin: auto;
+    margin-top: 15%;
 }
 
 .lightbox-thanks-for-your-support-image {
@@ -778,7 +779,12 @@
     cursor: unset;
 }
 
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 850px) {
+
+    .header-content {
+        width: 70%;
+        margin: auto;
+    }
 
     .hamburger-icon {
 
@@ -786,7 +792,10 @@
     }
 
     .header-container {
+        margin: auto;
         background-image: url("/images/image-hero-mobile.jpg");
+        background-size: cover;
+        background-position-y: bottom;
     }
 
     .about-discover-get-started {
@@ -801,7 +810,7 @@
     .main-container {
 
         width: 70%;
-        margin-top: -8%;
+        margin-top: -12%;
     }
 
     .button-and-bookmark {
@@ -968,7 +977,8 @@
 
     .horizontal-line {
 
-        width: 100.5%;
+        width: 100%;
+        margin-top: -1vh;
     }
 
     .active-light-box-card {
@@ -1020,14 +1030,22 @@
 
     .lightbox-thanks-for-your-support-container {
 
-        width: 60%;
+        width: 70%;
         top: 25%;
         left: 18%;
     }
 
     .lightbox-thanks-for-your-support-button {
 
-        margin-bottom: 6%;
+        border: none;
+        background-color: #3CB3AB;
+        color: white;
+        padding: 4% 9% 4% 9%;
+        border-radius: 30px;
+    
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 5%;
     }
 
     .lightbox-hamburger {
@@ -1064,8 +1082,8 @@
 
         background-color: white;
         margin: auto;
-        margin-top: 15%;
-        width: 40%;
+        margin-top: 8%;
+        width: 70%;
         color: black;
         font-size: 18px;
         font-weight: 500;
@@ -1207,9 +1225,14 @@
         padding: 5% 11% 7% 11%;
     }
 
-    .lightbox-hamburger-container {
+    .lightbox-thanks-for-your-support-image {
 
-        width: 50%;
+        margin-top: 10%;
+    }
+
+    .lightbox-thanks-for-your-support-button {
+
+        padding: 5% 11% 5% 11%;
     }
 }
 
@@ -1247,11 +1270,30 @@
 
     .lightbox-hamburger-container {
 
-        width: 60%;
+        width: 90%;
     }
 
     .logo-image {
         margin-right: 0%;
+    }
+
+    .lightbox-thanks-for-your-support-container {
+
+        width: 80%;
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+
+    .lightbox-thanks-for-your-support-image {
+
+        margin-top: 10%;
+    }
+
+    .lightbox-thanks-for-your-support-button {
+
+        padding: 5% 12% 5% 12%;
+        margin-top: 5%;
+        margin-bottom: 6%;
     }
 }
 
@@ -1298,6 +1340,14 @@
 
     .lightbox-hamburger-container {
 
-        width: 75%;
+        width: 95%;
+        margin-top: 15%;
+    }
+
+    .lightbox-thanks-for-your-support-button {
+
+        padding: 6% 13% 6% 13%;
+        margin-top: 5%;
+        margin-bottom: 10%;
     }
 }
